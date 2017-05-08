@@ -13,9 +13,6 @@ import com.gikk.twirk.*;
 
 public class Main {
 	
-	public final String MY_PASS = "oauth:stsqsg4w2pa7e7lgvg38f21bg0ytbg";
-	public final String MY_ID = "fluxxsc";
-	
 	public Main() {
 		try {
 			setup();
@@ -38,7 +35,7 @@ public class Main {
 		
 		System.out.println("Connecting to " + channel);
 		
-		Twirk twirk = new TwirkBuilder(channel, MY_ID, MY_PASS)
+		Twirk twirk = new TwirkBuilder(channel, USER.ID, USER.PASS)
 				.setVerboseMode(false)
 				.build();
 		
