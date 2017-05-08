@@ -78,7 +78,8 @@ public class Main {
 		return new TwirkListenerBaseImpl() {
 			@Override
 			public void onPrivMsg(TwitchUser sender, TwitchMessage message) {
-				System.out.println(sender.getDisplayName() + ": " + message.getContent());
+				System.out.println(String.format("%-20s    %s", sender.getDisplayName(), message.getContent()));
+				//System.out.println(sender.getDisplayName() + ": \t\t" + message.getContent());
 			}
 		};
 	}
